@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  build_and_deploy:
+  build_and_deploy_job:
     if: github.event_name == 'push' || github.event.action != 'closed'
     runs-on: ubuntu-latest
     name: Build and Deploy
@@ -27,7 +27,7 @@ jobs:
           api_location: api
           output_location: dist
 
-  close_pull_request:
+  close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request
