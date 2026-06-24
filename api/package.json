@@ -1,0 +1,10 @@
+{
+  "name": "sentrasec-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "@azure/cosmos": "^4.2.0",
+    "nodemailer": "^9.0.1"
+  }
+}

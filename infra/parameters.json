@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "staticWebAppName": {
+      "value": "sentrasec"
+    },
+    "cosmosAccountName": {
+      "value": "sentrasec-cosmos-786"
+    },
+    "databaseName": {
+      "value": "sentrasec"
+    },
+    "repositoryUrl": {
+      "value": "https://github.com/sentrasec1/sentrasec"
+    },
+    "branch": {
+      "value": "main"
+    }
+  }
+}
