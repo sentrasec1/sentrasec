@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis,
@@ -2030,10 +2030,8 @@ export default function App() {
   };
 
   const handleDeviceDetected = async (d) => {
-    setDevice(d); 
-    setScreen("dashboard");
-    // Fire-and-forget: register session asynchronously without blocking the transition
-    if (user) registerSecuritySession(user, d).catch(() => {});
+    if (user) await registerSecuritySession(user, d);
+    setDevice(d); setScreen("dashboard");
   };
 
   const handlePkg = async (pkgId) => {
