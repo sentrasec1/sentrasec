@@ -1,19 +1,19 @@
 {
   "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": ["/api/*", "/*.{css,scss,js,png,gif,ico,jpg,svg,webp,avif}"]
+    "rewrite": "/index.html"
   },
   "routes": [
     {
       "route": "/api/*",
       "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/*.{js,css,svg,png,gif,ico,jpg,jpeg,webp,woff,woff2}",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
     }
   ],
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/index.html"
-    }
-  },
   "globalHeaders": {
     "Content-Security-Policy": "default-src 'self' https://api.ipify.org; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.ipify.org;",
     "X-Content-Type-Options": "nosniff",
