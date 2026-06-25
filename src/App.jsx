@@ -2017,8 +2017,58 @@ function RepsV() {
 /* ═══════════════════════════════════════════════════════════
    ROOT APP
 ═══════════════════════════════════════════════════════════ */
+function LandingPage({ onGetStarted }) {
+  return (
+    <div style={{ minHeight: "100vh", backgroundColor: "#020817", color: "white", fontFamily: "var(--fs)" }}>
+      {/* Header */}
+      <header style={{ padding: "20px 40px", display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+        <Logo size={40} lightMode={true} showTagline={false} />
+        <div style={{ display: "flex", gap: "16px" }}>
+          <button onClick={onGetStarted} style={{ padding: "10px 24px", backgroundColor: "transparent", color: "white", border: "1px solid rgba(255,255,255,0.2)", borderRadius: 8, fontWeight: 600, cursor: "pointer", transition: "all 0.2s" }}>
+            Sign In
+          </button>
+          <button onClick={onGetStarted} style={{ padding: "10px 24px", backgroundColor: "#0ea5e9", color: "white", border: "none", borderRadius: 8, fontWeight: 600, cursor: "pointer", transition: "all 0.2s" }}>
+            Get Started
+          </button>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <main style={{ padding: "100px 20px", textAlign: "center", maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ display: "inline-block", padding: "6px 16px", backgroundColor: "rgba(14, 165, 233, 0.1)", color: "#0ea5e9", borderRadius: 20, fontSize: "0.875rem", fontWeight: 600, marginBottom: 24 }}>
+          SentraSec 3.0 is now available
+        </div>
+        <h1 style={{ fontSize: "4.5rem", fontWeight: 800, marginBottom: 24, letterSpacing: "-0.02em", background: "linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: 1.1 }}>
+          Centralized Security<br/>Intelligence Platform
+        </h1>
+        <p style={{ fontSize: "1.25rem", color: "#94a3b8", marginBottom: 48, lineHeight: 1.6, maxWidth: 600, margin: "0 auto 48px auto" }}>
+          Protect your endpoints, analyze threats with advanced AI, and respond to incidents in real-time. The ultimate SOC command center.
+        </p>
+        <button onClick={onGetStarted} style={{ padding: "16px 48px", backgroundColor: "#3b82f6", color: "white", border: "none", borderRadius: 12, fontSize: "1.25rem", fontWeight: 700, cursor: "pointer", boxShadow: "0 0 40px rgba(59, 130, 246, 0.4)", transition: "transform 0.2s" }} onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"} onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}>
+          Start Free Trial
+        </button>
+        
+        {/* Features preview */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 32, marginTop: 100 }}>
+          {[
+            { title: "Real-time Monitoring", desc: "Track threats instantly across all your endpoints with low latency.", icon: "⚡" },
+            { title: "AI-Powered Analysis", desc: "Identify zero-day vulnerabilities using advanced machine learning models.", icon: "🧠" },
+            { title: "Automated Responses", desc: "Execute security playbooks automatically when threats are detected.", icon: "🛡️" }
+          ].map((feature, i) => (
+            <div key={i} style={{ padding: 32, backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.05)", borderRadius: 16, textAlign: "left", backdropFilter: "blur(10px)" }}>
+              <div style={{ fontSize: "2rem", marginBottom: 16 }}>{feature.icon}</div>
+              <h3 style={{ fontSize: "1.25rem", fontWeight: 600, marginBottom: 12, color: "#e2e8f0" }}>{feature.title}</h3>
+              <p style={{ color: "#94a3b8", lineHeight: 1.5 }}>{feature.desc}</p>
+            </div>
+          ))}
+        </div>
+      </main>
+    </div>
+  );
+}
+
 export default function App() {
-  const [screen,   setScreen]   = useState("auth");   // auth | detecting | pricing | dashboard
+  const [screen,   setScreen]   = useState("landing");   // landing | auth | detecting | pricing | dashboard
   const [showAuth, setShowAuth] = useState(false);
   const [user,     setUser]     = useState(null);
   const [device,   setDevice]   = useState(null);
@@ -2046,6 +2096,11 @@ export default function App() {
   return (
     <>
       <style>{CSS}</style>
+
+      {/* LANDING */}
+      {screen==="landing" && (
+        <LandingPage onGetStarted={() => setScreen("auth")} />
+      )}
 
       {/* AUTH SCREEN */}
       {screen==="auth"&&(
