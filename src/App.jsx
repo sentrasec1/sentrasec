@@ -375,87 +375,87 @@ body{background:var(--lb);color:var(--lt);font-family:var(--fs)}
 .gdiv::before,.gdiv::after{content:'';flex:1;height:1px;background:var(--lbo2)}
 
 /* DASHBOARD */
-.dl{display:flex;min-height:100vh;background:var(--db);font-family:var(--fm)}
-.sb{width:250px;flex-shrink:0;background:var(--db1);border-right:1px solid var(--dbo);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
-.sbl{padding:16px 18px 13px;border-bottom:1px solid var(--dbo)}
+.dl{display:flex;min-height:100vh;background:var(--lb);font-family:var(--fm)}
+.sb{width:250px;flex-shrink:0;background:var(--lb1);border-right:1px solid var(--lbo);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
+.sbl{padding:16px 18px 13px;border-bottom:1px solid var(--lbo)}
 .sbp{margin:10px 12px;padding:8px 12px;border-radius:6px;font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:600;text-align:center;border:1px solid}
 .sbn{flex:1;overflow-y:auto;padding:5px 0}
-.sbsc{font-size:9px;letter-spacing:2px;color:var(--dm);text-transform:uppercase;padding:13px 20px 5px}
-.ni{display:flex;align-items:center;gap:10px;padding:8px 20px;font-size:12px;color:var(--dm);cursor:pointer;transition:all .15s;position:relative;letter-spacing:.5px}
-.ni:hover{color:var(--dt);background:rgba(34,211,238,.04)}
-.ni.on{color:var(--dc);background:rgba(34,211,238,.08)}
-.ni.on::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:2px;background:var(--dc);border-radius:0 2px 2px 0}
+.sbsc{font-size:9px;letter-spacing:2px;color:var(--lm);text-transform:uppercase;padding:13px 20px 5px}
+.ni{display:flex;align-items:center;gap:10px;padding:8px 20px;font-size:12px;color:var(--lm);cursor:pointer;transition:all .15s;position:relative;letter-spacing:.5px}
+.ni:hover{color:var(--lt);background:rgba(14,165,233,.06)}
+.ni.on{color:var(--C);background:rgba(14,165,233,.12)}
+.ni.on::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:2px;background:var(--C);border-radius:0 2px 2px 0}
 .ni .nb{margin-left:auto;font-size:9px;padding:2px 6px;background:rgba(239,68,68,.2);color:#f87171;border-radius:10px;font-weight:600}
 .ni.lkd{opacity:.28;cursor:not-allowed}
-.ni.lkd:hover{background:none;color:var(--dm)}
-.sbf{padding:13px 18px;border-top:1px solid var(--dbo)}
-.sbci{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--dm);margin-bottom:6px;text-decoration:none;transition:color .2s}
-.sbci:hover{color:var(--dc)}
-.lgb{width:100%;padding:8px;background:transparent;border:1px solid var(--dbo);border-radius:4px;color:var(--dm);font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all .2s;margin-top:8px}
+.ni.lkd:hover{background:none;color:var(--lm)}
+.sbf{padding:13px 18px;border-top:1px solid var(--lbo)}
+.sbci{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--lm);margin-bottom:6px;text-decoration:none;transition:color .2s}
+.sbci:hover{color:var(--C)}
+.lgb{width:100%;padding:8px;background:transparent;border:1px solid var(--lbo);border-radius:4px;color:var(--lm);font-size:10px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all .2s;margin-top:8px}
 .lgb:hover{border-color:#ef4444;color:#f87171;background:rgba(239,68,68,.05)}
 .dm{margin-left:250px;flex:1;min-height:100vh}
-.tb{height:55px;background:var(--db1);border-bottom:1px solid var(--dbo);display:flex;align-items:center;padding:0 22px;gap:12px;position:sticky;top:0;z-index:50}
-.tbt{font-family:var(--fd);font-size:15px;font-weight:700;flex:1;color:var(--dt)}
+.tb{height:55px;background:var(--lb1);border-bottom:1px solid var(--lbo);display:flex;align-items:center;padding:0 22px;gap:12px;position:sticky;top:0;z-index:50}
+.tbt{font-family:var(--fd);font-size:15px;font-weight:700;flex:1;color:var(--lt)}
 .tpl{display:flex;align-items:center;gap:7px;padding:5px 11px;border-radius:4px}
 .tdot{width:6px;height:6px;border-radius:50%;animation:dlp 1.5s infinite}
 @keyframes dlp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
 .ub{padding:6px 12px;background:transparent;border:1px solid;border-radius:4px;font-size:11px;cursor:pointer;transition:all .2s;font-family:var(--fm)}
 .dcc{padding:22px}
-.pn{background:var(--db1);border:1px solid var(--dbo);border-radius:10px;overflow:hidden;margin-bottom:18px}
-.ph{padding:14px 20px;border-bottom:1px solid var(--dbo);display:flex;align-items:center;justify-content:space-between}
-.pt{font-family:var(--fd);font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px;color:var(--dt)}
+.pn{background:var(--lb1);border:1px solid var(--lbo);border-radius:10px;overflow:hidden;margin-bottom:18px}
+.ph{padding:14px 20px;border-bottom:1px solid var(--lbo);display:flex;align-items:center;justify-content:space-between}
+.pt{font-family:var(--fd);font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px;color:var(--lt)}
 .pb{padding:14px 20px}
 .kg{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:13px;margin-bottom:20px}
-.kc{background:var(--db1);border:1px solid var(--dbo);border-radius:10px;padding:16px;position:relative;overflow:hidden}
-.kc:hover{border-color:var(--dbo2)}
-.kl{font-size:10px;letter-spacing:2px;color:var(--dm);text-transform:uppercase;margin-bottom:9px}
+.kc{background:var(--lb1);border:1px solid var(--lbo);border-radius:10px;padding:16px;position:relative;overflow:hidden}
+.kc:hover{border-color:var(--lbo2)}
+.kl{font-size:10px;letter-spacing:2px;color:var(--lm);text-transform:uppercase;margin-bottom:9px}
 .kv{font-family:var(--fd);font-size:30px;font-weight:900;line-height:1;margin-bottom:5px}
-.kd{font-size:10px;color:var(--dm)}
+.kd{font-size:10px;color:var(--lm)}
 .kd.up{color:#f87171}.kd.dn{color:#4ade80}
 .ki{position:absolute;top:13px;right:13px;font-size:17px;opacity:.28}
 .kbd{position:absolute;bottom:0;left:0;right:0;height:2px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
 .g3{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:18px}
 @media(max-width:900px){.g2,.g3{grid-template-columns:1fr}}
-.ar{display:flex;align-items:flex-start;gap:9px;padding:10px 0;border-bottom:1px solid var(--dbo)}
+.ar{display:flex;align-items:flex-start;gap:9px;padding:10px 0;border-bottom:1px solid var(--lbo)}
 .ar:last-child{border-bottom:none}
 .sbg{font-size:9px;font-weight:700;letter-spacing:1px;padding:3px 7px;border-radius:3px;border:1px solid;flex-shrink:0;text-transform:uppercase;margin-top:1px}
-.am{font-size:12px;color:var(--dt);line-height:1.4}
-.amt{font-size:10px;color:var(--dm);margin-top:3px}
+.am{font-size:12px;color:var(--lt);line-height:1.4}
+.amt{font-size:10px;color:var(--lm);margin-top:3px}
 .ps{max-height:350px;overflow-y:auto;padding:0 20px}
 .dt{width:100%;border-collapse:collapse;font-size:12px}
-.dt th{padding:7px 11px;text-align:left;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--dm);border-bottom:1px solid var(--dbo);font-weight:500}
-.dt td{padding:9px 11px;border-bottom:1px solid rgba(34,211,238,.04);vertical-align:middle;color:var(--dt)}
+.dt th{padding:7px 11px;text-align:left;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--lm);border-bottom:1px solid var(--lbo);font-weight:500}
+.dt td{padding:9px 11px;border-bottom:1px solid rgba(14,165,233,.06);vertical-align:middle;color:var(--lt)}
 .dt tr:last-child td{border-bottom:none}
-.dt tr:hover td{background:rgba(34,211,238,.02)}
-.hn{color:var(--dc);font-weight:500}
+.dt tr:hover td{background:rgba(14,165,233,.04)}
+.hn{color:var(--C);font-weight:500}
 
 /* SCANNER */
-.scan-wrap{background:var(--db2);border:1px solid var(--dbo2);border-radius:12px;padding:24px;margin-bottom:16px}
-.scan-progress-bar{height:6px;background:var(--dbo);border-radius:3px;overflow:hidden;margin:12px 0}
-.scan-progress-fill{height:100%;border-radius:3px;transition:width .5s ease;background:linear-gradient(90deg,var(--dc),#818cf8)}
-.scan-phase{font-size:11px;color:var(--dm);font-family:var(--fm);letter-spacing:.5px;min-height:18px}
-.scan-phase .cursor{display:inline-block;width:6px;height:12px;background:var(--dc);animation:cur .7s infinite;vertical-align:middle;margin-left:4px;border-radius:1px}
+.scan-wrap{background:var(--lb2);border:1px solid var(--lbo2);border-radius:12px;padding:24px;margin-bottom:16px}
+.scan-progress-bar{height:6px;background:var(--lbo);border-radius:3px;overflow:hidden;margin:12px 0}
+.scan-progress-fill{height:100%;border-radius:3px;transition:width .5s ease;background:linear-gradient(90deg,var(--C),#818cf8)}
+.scan-phase{font-size:11px;color:var(--lm);font-family:var(--fm);letter-spacing:.5px;min-height:18px}
+.scan-phase .cursor{display:inline-block;width:6px;height:12px;background:var(--C);animation:cur .7s infinite;vertical-align:middle;margin-left:4px;border-radius:1px}
 @keyframes cur{0%,100%{opacity:1}50%{opacity:0}}
 .risk-ring{display:flex;flex-direction:column;align-items:center;justify-content:center;width:120px;height:120px;border-radius:50%;border:6px solid;position:relative}
 .risk-score{font-family:var(--fd);font-size:32px;font-weight:900;line-height:1}
 .risk-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-top:3px}
-.vuln-row{display:flex;align-items:flex-start;gap:10px;padding:11px 0;border-bottom:1px solid var(--dbo)}
+.vuln-row{display:flex;align-items:flex-start;gap:10px;padding:11px 0;border-bottom:1px solid var(--lbo)}
 .vuln-row:last-child{border-bottom:none}
-.vuln-app{font-size:12px;color:var(--dc);font-weight:500}
-.vuln-desc{font-size:11px;color:var(--dm);margin-top:3px}
-.app-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--dbo);font-size:12px}
+.vuln-app{font-size:12px;color:var(--C);font-weight:500}
+.vuln-desc{font-size:11px;color:var(--lm);margin-top:3px}
+.app-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--lbo);font-size:12px}
 .app-row:last-child{border-bottom:none}
 .app-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 .device-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
-.device-row{display:flex;justify-content:space-between;padding:8px 12px;background:var(--db2);border-radius:8px;border:1px solid var(--dbo);font-size:12px}
+.device-row{display:flex;justify-content:space-between;padding:8px 12px;background:var(--lb2);border-radius:8px;border:1px solid var(--lbo);font-size:12px}
 
 /* FG */
 .fgate{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:55vh;gap:14px;text-align:center}
 .fgate-icon{font-size:52px;opacity:.25}
-.fgate-title{font-family:var(--fd);font-size:22px;font-weight:800;color:var(--dm)}
-.fgate-sub{font-size:13px;color:var(--dm);max-width:380px;line-height:1.6}
-.fgate-btn{padding:11px 22px;background:var(--dc);border:none;border-radius:6px;color:#000;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;margin-top:4px}
+.fgate-title{font-family:var(--fd);font-size:22px;font-weight:800;color:var(--lm)}
+.fgate-sub{font-size:13px;color:var(--lm);max-width:380px;line-height:1.6}
+.fgate-btn{padding:11px 22px;background:var(--C);border:none;border-radius:6px;color:#000;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;margin-top:4px}
 
 /* REVEAL */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
@@ -500,7 +500,7 @@ function SBadge({ s }) { const c = sc(s); return <div className="sbg" style={{ b
 function LiveClock() {
   const [t, setT] = useState(new Date());
   useEffect(() => { const id = setInterval(() => setT(new Date()), 1000); return () => clearInterval(id); }, []);
-  return <span style={{ fontFamily: "var(--fm)", fontSize: 10, color: "var(--dm)" }}>{t.toUTCString().slice(0, -4)} UTC</span>;
+  return <span style={{ fontFamily: "var(--fm)", fontSize: 10, color: "var(--lm)" }}>{t.toUTCString().slice(0, -4)} UTC</span>;
 }
 function useReveal() {
   useEffect(() => {
@@ -1125,7 +1125,7 @@ function DeviceSecurityView({ user, pkg }) {
       <div className="pn">
         <div className="ph">
           <div className="pt">🖥 Auto-Detected Device — {user.name}</div>
-          <div style={{ fontSize: 10, color: "var(--dm)", fontFamily: "var(--fm)" }}>
+          <div style={{ fontSize: 10, color: "var(--lm)", fontFamily: "var(--fm)" }}>
             {device ? <span style={{ color: "#22c55e" }}>● Live</span> : "Loading…"}
           </div>
         </div>
@@ -1151,13 +1151,13 @@ function DeviceSecurityView({ user, pkg }) {
                 ["Detected At", new Date(device.detectedAt).toLocaleTimeString()],
               ].map(([k, v]) => (
                 <div key={k} className="device-row">
-                  <span style={{ color: "var(--dm)", fontSize: 11 }}>{k}</span>
-                  <span style={{ color: "var(--dc)", fontSize: 11, fontWeight: 500, textAlign: "right", maxWidth: "55%", wordBreak: "break-all" }}>{v}</span>
+                  <span style={{ color: "var(--lm)", fontSize: 11 }}>{k}</span>
+                  <span style={{ color: "var(--C)", fontSize: 11, fontWeight: 500, textAlign: "right", maxWidth: "55%", wordBreak: "break-all" }}>{v}</span>
                 </div>
               ))}
             </div>
           ) : (
-            <div style={{ textAlign: "center", padding: 32, color: "var(--dm)", fontSize: 13 }}>Detecting device info…</div>
+            <div style={{ textAlign: "center", padding: 32, color: "var(--lm)", fontSize: 13 }}>Detecting device info…</div>
           )}
         </div>
       </div>
@@ -1166,8 +1166,8 @@ function DeviceSecurityView({ user, pkg }) {
       <div className="scan-wrap">
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
           <div>
-            <div style={{ fontFamily: "var(--fd)", fontSize: 16, fontWeight: 700, color: "var(--dt)", marginBottom: 4 }}>Security Scan Engine</div>
-            <div style={{ fontSize: 11, color: "var(--dm)", fontFamily: "var(--fm)" }}>
+            <div style={{ fontFamily: "var(--fd)", fontSize: 16, fontWeight: 700, color: "var(--lt)", marginBottom: 4 }}>Security Scan Engine</div>
+            <div style={{ fontSize: 11, color: "var(--lm)", fontFamily: "var(--fm)" }}>
               Package: <span style={{ color: pkg.color, fontWeight: 600 }}>{pkg.name} ({pkg.scanDepth})</span> · Max endpoints: {pkg.maxEndpoints >= 99999 ? "Unlimited" : pkg.maxEndpoints} · Apps scan limit: {pkg.appScanLimit >= 500 ? "Unlimited" : pkg.appScanLimit}
             </div>
           </div>
@@ -1180,13 +1180,13 @@ function DeviceSecurityView({ user, pkg }) {
         {scanning && (
           <>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
-              <div style={{ fontSize: 12, color: "var(--dc)", fontFamily: "var(--fm)" }}>{phase}<span className="cursor" /></div>
+              <div style={{ fontSize: 12, color: "var(--C)", fontFamily: "var(--fm)" }}>{phase}<span className="cursor" /></div>
               <span style={{ marginLeft: "auto", fontFamily: "var(--fm)", fontSize: 12, color: pkg.color, fontWeight: 600 }}>{progress}%</span>
             </div>
             <div className="scan-progress-bar"><div className="scan-progress-fill" style={{ width: `${progress}%` }} /></div>
             <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}>
               {pkg.scanPhases.map((p, i) => (
-                <div key={i} style={{ fontSize: 9, padding: "2px 8px", borderRadius: 3, background: i < phaseIdx ? "rgba(34,211,238,.15)" : i === phaseIdx ? "rgba(34,211,238,.08)" : "rgba(0,0,0,.2)", color: i < phaseIdx ? "var(--dc)" : i === phaseIdx ? "var(--dt)" : "var(--dm)", fontFamily: "var(--fm)", letterSpacing: .5, border: `1px solid ${i <= phaseIdx ? "var(--dbo2)" : "var(--dbo)"}` }}>
+                <div key={i} style={{ fontSize: 9, padding: "2px 8px", borderRadius: 3, background: i < phaseIdx ? "rgba(34,211,238,.15)" : i === phaseIdx ? "rgba(14,165,233,.12)" : "rgba(0,0,0,.2)", color: i < phaseIdx ? "var(--C)" : i === phaseIdx ? "var(--lt)" : "var(--lm)", fontFamily: "var(--fm)", letterSpacing: .5, border: `1px solid ${i <= phaseIdx ? "var(--lbo2)" : "var(--lbo)"}` }}>
                   {i < phaseIdx ? "✓ " : i === phaseIdx ? "→ " : ""}{p}
                 </div>
               ))}
@@ -1194,7 +1194,7 @@ function DeviceSecurityView({ user, pkg }) {
           </>
         )}
         {!scanning && !scanDone && (
-          <div style={{ textAlign: "center", padding: "28px 0", color: "var(--dm)", fontSize: 13, fontFamily: "var(--fm)" }}>
+          <div style={{ textAlign: "center", padding: "28px 0", color: "var(--lm)", fontSize: 13, fontFamily: "var(--fm)" }}>
             Click <strong style={{ color: pkg.color }}>Run Scan</strong> to start a {pkg.scanDepth} security scan of your device
           </div>
         )}
@@ -1216,9 +1216,9 @@ function DeviceSecurityView({ user, pkg }) {
                   <div style={{ fontFamily: "var(--fd)", fontSize: 18, fontWeight: 800, color: riskColor(riskScore), marginBottom: 8 }}>{riskLabel(riskScore)}</div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
                     {[["Critical", vulnCounts.critical, "#ef4444"], ["High", vulnCounts.high, "#f97316"], ["Medium", vulnCounts.medium, "#eab308"], ["Low", vulnCounts.low, "#22d3ee"]].map(([l, v, c]) => (
-                      <div key={l} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 11px", background: "var(--db2)", borderRadius: 8, border: `1px solid ${c}28` }}>
+                      <div key={l} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 11px", background: "var(--lb2)", borderRadius: 8, border: `1px solid ${c}28` }}>
                         <div style={{ width: 8, height: 8, borderRadius: 2, background: c, flexShrink: 0 }} />
-                        <span style={{ fontSize: 11, color: "var(--dm)", flex: 1, fontFamily: "var(--fm)" }}>{l}</span>
+                        <span style={{ fontSize: 11, color: "var(--lm)", flex: 1, fontFamily: "var(--fm)" }}>{l}</span>
                         <span style={{ color: c, fontWeight: 700, fontSize: 16, fontFamily: "var(--fd)" }}>{v}</span>
                       </div>
                     ))}
@@ -1227,7 +1227,7 @@ function DeviceSecurityView({ user, pkg }) {
               </div>
             </div>
             <div className="pn">
-              <div className="ph"><div className="pt">🦠 Virus Scan Results</div><div style={{ fontSize: 10, color: "var(--dm)" }}>{threats.length} found</div></div>
+              <div className="ph"><div className="pt">🦠 Virus Scan Results</div><div style={{ fontSize: 10, color: "var(--lm)" }}>{threats.length} found</div></div>
               <div style={{ padding: "0 20px", maxHeight: 240, overflowY: "auto" }}>
                 {threats.length === 0 ? (
                   <div style={{ textAlign: "center", padding: "24px 0", color: "#22c55e", fontSize: 13, fontFamily: "var(--fm)" }}>✓ No threats detected</div>
@@ -1235,7 +1235,7 @@ function DeviceSecurityView({ user, pkg }) {
                   <div key={i} className="ar">
                     <SBadge s={t.sev} />
                     <div style={{ flex: 1 }}>
-                      <div className="am" style={{ color: "var(--dc)" }}>{t.name}</div>
+                      <div className="am" style={{ color: "var(--C)" }}>{t.name}</div>
                       <div className="amt">{t.file}</div>
                     </div>
                     <div style={{ fontSize: 10, padding: "3px 7px", background: "rgba(34,197,94,.1)", color: "#22c55e", borderRadius: 3, border: "1px solid rgba(34,197,94,.28)", whiteSpace: "nowrap", fontFamily: "var(--fm)" }}>{t.action}</div>
@@ -1249,7 +1249,7 @@ function DeviceSecurityView({ user, pkg }) {
           <div className="pn" style={{ marginBottom: 16 }}>
             <div className="ph">
               <div className="pt">⚠ Vulnerability Details</div>
-              <div style={{ fontSize: 10, color: "var(--dm)" }}>{vulns.length} CVEs · {pkg.scanDepth} scan</div>
+              <div style={{ fontSize: 10, color: "var(--lm)" }}>{vulns.length} CVEs · {pkg.scanDepth} scan</div>
             </div>
             <div style={{ overflowX: "auto" }}>
               <table className="dt">
@@ -1259,18 +1259,18 @@ function DeviceSecurityView({ user, pkg }) {
                     const sv = sc(v.sev);
                     const bar = v.score >= 9 ? "#ef4444" : v.score >= 7 ? "#f97316" : "#eab308";
                     return <tr key={v.id}>
-                      <td style={{ color: "var(--dc)", fontWeight: 500, fontFamily: "var(--fm)" }}>{v.id}</td>
-                      <td style={{ color: "var(--dt)", fontFamily: "var(--fm)" }}>{v.app}</td>
+                      <td style={{ color: "var(--C)", fontWeight: 500, fontFamily: "var(--fm)" }}>{v.id}</td>
+                      <td style={{ color: "var(--lt)", fontFamily: "var(--fm)" }}>{v.app}</td>
                       <td><div className="sbg" style={{ background: sv.bg, color: sv.text, borderColor: sv.border, display: "inline-block" }}>{v.sev}</div></td>
                       <td>
                         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                           <span style={{ color: bar, fontWeight: 600, fontFamily: "var(--fm)" }}>{v.score}</span>
-                          <div style={{ width: 40, height: 4, background: "var(--dbo)", borderRadius: 2 }}>
+                          <div style={{ width: 40, height: 4, background: "var(--lbo)", borderRadius: 2 }}>
                             <div style={{ height: "100%", width: `${(v.score / 10) * 100}%`, background: bar, borderRadius: 2 }} />
                           </div>
                         </div>
                       </td>
-                      <td style={{ color: "var(--dm)", fontSize: 11, maxWidth: 180 }}>{v.desc}</td>
+                      <td style={{ color: "var(--lm)", fontSize: 11, maxWidth: 180 }}>{v.desc}</td>
                       <td style={{ color: "#4ade80", fontSize: 11, fontFamily: "var(--fm)" }}>{v.fix}</td>
                     </tr>;
                   })}
@@ -1284,7 +1284,7 @@ function DeviceSecurityView({ user, pkg }) {
             <div className="pn">
               <div className="ph">
                 <div className="pt">📦 Scanned Applications ({Math.min(device.installedApps.length, pkg.appScanLimit >= 500 ? device.installedApps.length : pkg.appScanLimit)})</div>
-                <div style={{ fontSize: 10, color: "var(--dm)", fontFamily: "var(--fm)" }}>{pkg.scanDepth} scan · {device.os}</div>
+                <div style={{ fontSize: 10, color: "var(--lm)", fontFamily: "var(--fm)" }}>{pkg.scanDepth} scan · {device.os}</div>
               </div>
               <div style={{ padding: "0 20px", maxHeight: 280, overflowY: "auto" }}>
                 {device.installedApps.slice(0, pkg.appScanLimit >= 500 ? device.installedApps.length : pkg.appScanLimit).map((app, i) => {
@@ -1292,7 +1292,7 @@ function DeviceSecurityView({ user, pkg }) {
                   return (
                     <div key={i} className="app-row">
                       <div className="app-dot" style={{ background: hasVuln ? "#ef4444" : "#22c55e" }} />
-                      <span style={{ flex: 1, color: "var(--dt)" }}>{app}</span>
+                      <span style={{ flex: 1, color: "var(--lt)" }}>{app}</span>
                       {hasVuln && <div className="sbg" style={{ background: "rgba(239,68,68,.1)", color: "#f87171", borderColor: "rgba(239,68,68,.28)", display: "inline-block", fontSize: 9 }}>VULNERABLE</div>}
                       {!hasVuln && <span style={{ fontSize: 10, color: "#4ade80", fontFamily: "var(--fm)" }}>✓ Clean</span>}
                     </div>
@@ -1353,8 +1353,8 @@ function Dashboard({ user, onLogout, onUpgrade }) {
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <ShieldMark size={24} />
             <div>
-              <div style={{ fontFamily: "var(--fd)", fontSize: 16, fontWeight: 900, color: "var(--dc)", letterSpacing: "-.3px", lineHeight: 1 }}>SentraSec</div>
-              <div style={{ fontSize: 9, letterSpacing: 2, color: "var(--dm)", textTransform: "uppercase", marginTop: 3, fontFamily: "var(--fm)" }}>Security Ops</div>
+              <div style={{ fontFamily: "var(--fd)", fontSize: 16, fontWeight: 900, color: "var(--C)", letterSpacing: "-.3px", lineHeight: 1 }}>SentraSec</div>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "var(--lm)", textTransform: "uppercase", marginTop: 3, fontFamily: "var(--fm)" }}>Security Ops</div>
             </div>
           </div>
         </div>
@@ -1377,13 +1377,13 @@ function Dashboard({ user, onLogout, onUpgrade }) {
         </div>
         <div className="sbf">
           <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 10 }}>
-            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "rgba(34,211,238,.15)", border: "1px solid var(--dbo2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, color: "var(--dc)", fontWeight: 600, fontFamily: "var(--fd)", flexShrink: 0 }}>{user.name[0]}</div>
+            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "rgba(34,211,238,.15)", border: "1px solid var(--lbo2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, color: "var(--C)", fontWeight: 600, fontFamily: "var(--fd)", flexShrink: 0 }}>{user.name[0]}</div>
             <div>
-              <div style={{ fontSize: 12, color: "var(--dt)", fontWeight: 500, fontFamily: "var(--fm)" }}>{user.name}</div>
-              <div style={{ fontSize: 10, color: "var(--dm)", fontFamily: "var(--fm)" }}>{user.role}</div>
+              <div style={{ fontSize: 12, color: "var(--lt)", fontWeight: 500, fontFamily: "var(--fm)" }}>{user.name}</div>
+              <div style={{ fontSize: 10, color: "var(--lm)", fontFamily: "var(--fm)" }}>{user.role}</div>
             </div>
           </div>
-          <div style={{ borderTop: "1px solid var(--dbo)", paddingTop: 10, marginBottom: 2 }}>
+          <div style={{ borderTop: "1px solid var(--lbo)", paddingTop: 10, marginBottom: 2 }}>
             {[[`mailto:${B.email}`, "✉", B.email], [`tel:${B.phone.replace(/ /g, "")}`, "📱", B.phone]].map(([h, ic, v]) => (
               <a key={v} href={h} className="sbci"><span>{ic}</span><span style={{ fontSize: 9.5, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{v}</span></a>
             ))}
@@ -1447,7 +1447,7 @@ function OverView({ td, pkg, isGP, onUpgrade }) {
       </div>
       <div className="g3">
         <div className="pn">
-          <div className="ph"><div className="pt">⚡ Threat Activity — 24h</div><div style={{ fontSize: 10, color: "var(--dm)" }}>Live</div></div>
+          <div className="ph"><div className="pt">⚡ Threat Activity — 24h</div><div style={{ fontSize: 10, color: "var(--lm)" }}>Live</div></div>
           <div className="pb">
             <ResponsiveContainer width="100%" height={210}>
               <AreaChart data={td}>
@@ -1472,18 +1472,18 @@ function OverView({ td, pkg, isGP, onUpgrade }) {
           <div className="pb">
             <ResponsiveContainer width="100%" height={190}>
               <RadarChart data={RADAR_D}>
-                <PolarGrid stroke="rgba(34,211,238,.08)" />
+                <PolarGrid stroke="rgba(14,165,233,.12)" />
                 <PolarAngleAxis dataKey="subject" tick={{ fontSize: 9, fill: "#64748b" }} />
                 <Radar dataKey="A" stroke={pkg.color} fill={pkg.color} fillOpacity={.14} strokeWidth={1.5} />
               </RadarChart>
             </ResponsiveContainer>
-            <div style={{ textAlign: "center", fontSize: 11, color: "var(--dm)", fontFamily: "var(--fm)" }}>Score: <span style={{ color: pkg.color, fontWeight: 600 }}>72/100</span></div>
+            <div style={{ textAlign: "center", fontSize: 11, color: "var(--lm)", fontFamily: "var(--fm)" }}>Score: <span style={{ color: pkg.color, fontWeight: 600 }}>72/100</span></div>
           </div>
         </div>
       </div>
       <div className="g2">
         <div className="pn">
-          <div className="ph"><div className="pt">🔴 Recent Alerts</div><div style={{ fontSize: 10, color: "var(--dm)" }}>8 active</div></div>
+          <div className="ph"><div className="pt">🔴 Recent Alerts</div><div style={{ fontSize: 10, color: "var(--lm)" }}>8 active</div></div>
           <div className="ps">
             {[
               { sev: "CRITICAL", msg: "Brute force attack on SSH port 22", host: "prod-db-01", time: "2m ago", geo: "CN" },
@@ -1495,7 +1495,7 @@ function OverView({ td, pkg, isGP, onUpgrade }) {
               <div key={i} className="ar">
                 <SBadge s={a.sev} />
                 <div style={{ flex: 1 }}><div className="am">{a.msg}</div><div className="amt">{a.host} · {a.time}</div></div>
-                <div style={{ fontSize: 10, color: "var(--dm)", flexShrink: 0 }}>{a.geo}</div>
+                <div style={{ fontSize: 10, color: "var(--lm)", flexShrink: 0 }}>{a.geo}</div>
               </div>
             ))}
           </div>
@@ -1512,7 +1512,7 @@ function OverView({ td, pkg, isGP, onUpgrade }) {
               {PIE_D.map(d => (
                 <div key={d.name} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 11, fontFamily: "var(--fm)" }}>
                   <div style={{ width: 8, height: 8, borderRadius: 2, background: d.color, flexShrink: 0 }} />
-                  <span style={{ color: "var(--dm)", flex: 1 }}>{d.name}</span>
+                  <span style={{ color: "var(--lm)", flex: 1 }}>{d.name}</span>
                   <span style={{ color: d.color, fontWeight: 600 }}>{d.value}</span>
                 </div>
               ))}
@@ -1525,7 +1525,7 @@ function OverView({ td, pkg, isGP, onUpgrade }) {
           <div style={{ fontSize: 26 }}>🔮</div>
           <div style={{ flex: 1 }}>
             <div style={{ fontFamily: "var(--fd)", fontSize: 13, fontWeight: 700, color: "#818cf8", marginBottom: 4 }}>Unlock Guardian — Advanced SIEM, Threat Intel, Incident Playbooks</div>
-            <div style={{ fontSize: 12, color: "var(--dm)", fontFamily: "var(--fm)" }}>Also includes deep device scanning, app vulnerability correlation, and 30-day log retention.</div>
+            <div style={{ fontSize: 12, color: "var(--lm)", fontFamily: "var(--fm)" }}>Also includes deep device scanning, app vulnerability correlation, and 30-day log retention.</div>
           </div>
           <button onClick={onUpgrade} style={{ padding: "9px 18px", background: "#6366f1", border: "none", borderRadius: 6, color: "white", fontSize: 11, cursor: "pointer", fontWeight: 600, fontFamily: "var(--fm)" }}>Upgrade →</button>
         </div>
@@ -1552,19 +1552,19 @@ function AlertsV() {
       <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
         {["ALL", "CRITICAL", "HIGH", "MEDIUM", "LOW"].map(fl => {
           const c = sc(fl === "ALL" ? "CLEAN" : fl);
-          return <button key={fl} onClick={() => setF(fl)} style={{ padding: "5px 12px", border: `1px solid ${f === fl ? c.border : "var(--dbo)"}`, borderRadius: 4, background: f === fl ? c.bg : "transparent", color: f === fl ? c.text : "var(--dm)", cursor: "pointer", fontSize: 11, fontFamily: "var(--fm)", letterSpacing: 1, textTransform: "uppercase" }}>
+          return <button key={fl} onClick={() => setF(fl)} style={{ padding: "5px 12px", border: `1px solid ${f === fl ? c.border : "var(--lbo)"}`, borderRadius: 4, background: f === fl ? c.bg : "transparent", color: f === fl ? c.text : "var(--lm)", cursor: "pointer", fontSize: 11, fontFamily: "var(--fm)", letterSpacing: 1, textTransform: "uppercase" }}>
             {fl}{fl !== "ALL" && ` (${ALRT.filter(a => a.sev === fl).length})`}
           </button>;
         })}
       </div>
       <div className="pn">
-        <div className="ph"><div className="pt">⚡ Security Alerts</div><div style={{ fontSize: 10, color: "var(--dm)" }}>{filtered.length} alerts</div></div>
+        <div className="ph"><div className="pt">⚡ Security Alerts</div><div style={{ fontSize: 10, color: "var(--lm)" }}>{filtered.length} alerts</div></div>
         <div style={{ padding: "0 20px" }}>
           {filtered.map((a, i) => (
             <div key={i} className="ar">
               <SBadge s={a.sev} />
               <div style={{ flex: 1 }}><div className="am">{a.msg}</div><div className="amt">{a.host} · Source: {a.geo} · {a.time}</div></div>
-              <button style={{ padding: "5px 10px", background: "rgba(34,211,238,.07)", border: "1px solid rgba(34,211,238,.18)", borderRadius: 4, color: "var(--dc)", fontSize: 10, cursor: "pointer", fontFamily: "var(--fm)" }}>Investigate</button>
+              <button style={{ padding: "5px 10px", background: "rgba(34,211,238,.07)", border: "1px solid rgba(34,211,238,.18)", borderRadius: 4, color: "var(--C)", fontSize: 10, cursor: "pointer", fontFamily: "var(--fm)" }}>Investigate</button>
             </div>
           ))}
         </div>
@@ -1584,7 +1584,7 @@ function VulnsV({ pkg }) {
         ))}
       </div>
       <div className="pn">
-        <div className="ph"><div className="pt">⚠ Vulnerability Report</div><div style={{ fontSize: 10, color: "var(--dm)" }}>{vulns.length} findings · {pkg.scanDepth} scan</div></div>
+        <div className="ph"><div className="pt">⚠ Vulnerability Report</div><div style={{ fontSize: 10, color: "var(--lm)" }}>{vulns.length} findings · {pkg.scanDepth} scan</div></div>
         <div style={{ overflowX: "auto" }}>
           <table className="dt">
             <thead><tr><th>CVE ID</th><th>Application</th><th>Severity</th><th>CVSS</th><th>Description</th><th>Fix</th></tr></thead>
@@ -1592,11 +1592,11 @@ function VulnsV({ pkg }) {
               {vulns.map(v => {
                 const sv = sc(v.sev); const bar = v.score >= 9 ? "#ef4444" : v.score >= 7 ? "#f97316" : "#eab308"; return (
                   <tr key={v.id}>
-                    <td style={{ color: "var(--dc)", fontWeight: 500, fontFamily: "var(--fm)" }}>{v.id}</td>
-                    <td style={{ color: "var(--dt)", fontFamily: "var(--fm)" }}>{v.app}</td>
+                    <td style={{ color: "var(--C)", fontWeight: 500, fontFamily: "var(--fm)" }}>{v.id}</td>
+                    <td style={{ color: "var(--lt)", fontFamily: "var(--fm)" }}>{v.app}</td>
                     <td><div className="sbg" style={{ background: sv.bg, color: sv.text, borderColor: sv.border, display: "inline-block" }}>{v.sev}</div></td>
-                    <td><div style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ color: bar, fontWeight: 600, fontFamily: "var(--fm)" }}>{v.score}</span><div style={{ width: 40, height: 4, background: "var(--dbo)", borderRadius: 2 }}><div style={{ height: "100%", width: `${(v.score / 10) * 100}%`, background: bar, borderRadius: 2 }} /></div></div></td>
-                    <td style={{ color: "var(--dm)", fontSize: 11, maxWidth: 180 }}>{v.desc}</td>
+                    <td><div style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ color: bar, fontWeight: 600, fontFamily: "var(--fm)" }}>{v.score}</span><div style={{ width: 40, height: 4, background: "var(--lbo)", borderRadius: 2 }}><div style={{ height: "100%", width: `${(v.score / 10) * 100}%`, background: bar, borderRadius: 2 }} /></div></div></td>
+                    <td style={{ color: "var(--lm)", fontSize: 11, maxWidth: 180 }}>{v.desc}</td>
                     <td style={{ color: "#4ade80", fontSize: 11, fontFamily: "var(--fm)" }}>{v.fix}</td>
                   </tr>
                 );
@@ -1622,7 +1622,7 @@ function EndpV() {
   ];
   return (
     <div className="pn">
-      <div className="ph"><div className="pt">⬡ Endpoint Inventory</div><div style={{ fontSize: 10, color: "var(--dm)" }}>{EPS.length} devices</div></div>
+      <div className="ph"><div className="pt">⬡ Endpoint Inventory</div><div style={{ fontSize: 10, color: "var(--lm)" }}>{EPS.length} devices</div></div>
       <div style={{ overflowX: "auto" }}>
         <table className="dt">
           <thead><tr><th>Hostname</th><th>IP</th><th>OS</th><th>Status</th><th>Threats</th><th>Last Seen</th></tr></thead>
@@ -1631,11 +1631,11 @@ function EndpV() {
               const s = sc(e.status); return (
                 <tr key={e.name}>
                   <td className="hn">{e.name}</td>
-                  <td style={{ color: "var(--dm)", fontSize: 11, fontFamily: "var(--fm)" }}>{e.ip}</td>
-                  <td style={{ fontSize: 11, color: "var(--dm)" }}>{e.os}</td>
+                  <td style={{ color: "var(--lm)", fontSize: 11, fontFamily: "var(--fm)" }}>{e.ip}</td>
+                  <td style={{ fontSize: 11, color: "var(--lm)" }}>{e.os}</td>
                   <td><div className="sbg" style={{ background: s.bg, color: s.text, borderColor: s.border, display: "inline-block" }}>{e.status}</div></td>
                   <td style={{ color: e.threats > 0 ? "#f87171" : "#4ade80", fontWeight: 600 }}>{e.threats}</td>
-                  <td style={{ fontSize: 11, color: "var(--dm)" }}><span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: e.seen === "Active" ? "#22c55e" : "#64748b", marginRight: 6 }} />{e.seen}</td>
+                  <td style={{ fontSize: 11, color: "var(--lm)" }}><span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: e.seen === "Active" ? "#22c55e" : "#64748b", marginRight: 6 }} />{e.seen}</td>
                 </tr>
               );
             })}
@@ -1685,7 +1685,7 @@ function FGateV({ title, icon, desc, pkg, onUpgrade }) {
       <div className="fgate-icon">{icon}</div>
       <div className="fgate-title">{title}</div>
       <div className="fgate-sub">{desc}</div>
-      <div style={{ fontSize: 12, color: "var(--dm)", fontFamily: "var(--fm)" }}>Available on <strong style={{ color: "var(--dc)" }}>{pkg}</strong> and above</div>
+      <div style={{ fontSize: 12, color: "var(--lm)", fontFamily: "var(--fm)" }}>Available on <strong style={{ color: "var(--C)" }}>{pkg}</strong> and above</div>
       <button className="fgate-btn" onClick={onUpgrade}>Upgrade to {pkg} →</button>
     </div>
   );
@@ -1708,14 +1708,14 @@ function IncV({ isGP, onUpgrade }) {
       </div>
       {incs.map(inc => {
         const s = sc(inc.sev), st = sc(inc.status); return (
-          <div key={inc.id} style={{ background: "var(--db2)", border: "1px solid var(--dbo)", borderRadius: 8, padding: 14, marginBottom: 10 }}>
+          <div key={inc.id} style={{ background: "var(--lb2)", border: "1px solid var(--lbo)", borderRadius: 8, padding: 14, marginBottom: 10 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 8 }}>
-              <SBadge s={inc.sev} /><div style={{ flex: 1 }}><div style={{ fontSize: 10, color: "var(--dm)", fontFamily: "var(--fm)" }}>{inc.id} · {inc.time}</div><div style={{ fontSize: 13, fontWeight: 500, color: "var(--dt)", fontFamily: "var(--fm)" }}>{inc.title}</div></div>
+              <SBadge s={inc.sev} /><div style={{ flex: 1 }}><div style={{ fontSize: 10, color: "var(--lm)", fontFamily: "var(--fm)" }}>{inc.id} · {inc.time}</div><div style={{ fontSize: 13, fontWeight: 500, color: "var(--lt)", fontFamily: "var(--fm)" }}>{inc.title}</div></div>
               <div className="sbg" style={{ background: st.bg, color: st.text, borderColor: st.border }}>{inc.status}</div>
             </div>
-            <div style={{ fontSize: 11, color: "var(--dm)", lineHeight: 1.6, fontFamily: "var(--fm)" }}>{inc.desc}</div>
-            <div style={{ height: 3, background: "var(--dbo)", borderRadius: 2, marginTop: 10, overflow: "hidden" }}><div style={{ height: "100%", width: `${inc.progress}%`, background: inc.progress === 100 ? "#22c55e" : "var(--dc)", borderRadius: 2 }} /></div>
-            <div style={{ fontSize: 10, color: "var(--dm)", marginTop: 8, fontFamily: "var(--fm)" }}>Progress: <span style={{ color: "var(--dt)" }}>{inc.progress}%</span></div>
+            <div style={{ fontSize: 11, color: "var(--lm)", lineHeight: 1.6, fontFamily: "var(--fm)" }}>{inc.desc}</div>
+            <div style={{ height: 3, background: "var(--lbo)", borderRadius: 2, marginTop: 10, overflow: "hidden" }}><div style={{ height: "100%", width: `${inc.progress}%`, background: inc.progress === 100 ? "#22c55e" : "var(--C)", borderRadius: 2 }} /></div>
+            <div style={{ fontSize: 10, color: "var(--lm)", marginTop: 8, fontFamily: "var(--fm)" }}>Progress: <span style={{ color: "var(--lt)" }}>{inc.progress}%</span></div>
           </div>
         );
       })}
@@ -1729,11 +1729,11 @@ function RepsV() {
       <div className="ph"><div className="pt">▤ Reports & Exports</div></div>
       <div style={{ padding: "0 20px" }}>
         {[{ t: "Executive Security Summary", d: "May 2026", type: "PDF", sz: "2.4 MB" }, { t: "Vulnerability Assessment", d: "May 2026", type: "PDF", sz: "5.1 MB" }, { t: "Device Scan Report", d: "Today", type: "PDF", sz: "1.2 MB" }, { t: "SOC 2 Compliance Report", d: "Q1 2026", type: "PDF", sz: "8.7 MB" }, { t: "Network Traffic Analysis", d: "Apr 2026", type: "CSV", sz: "14.2 MB" }].map((r, i) => (
-          <div key={i} style={{ display: "flex", alignItems: "center", gap: 11, padding: "13px 0", borderBottom: "1px solid var(--dbo)" }}>
+          <div key={i} style={{ display: "flex", alignItems: "center", gap: 11, padding: "13px 0", borderBottom: "1px solid var(--lbo)" }}>
             <div style={{ fontSize: 20, opacity: .4 }}>📄</div>
-            <div style={{ flex: 1 }}><div style={{ fontSize: 13, fontWeight: 500, color: "var(--dt)", fontFamily: "var(--fm)" }}>{r.t}</div><div style={{ fontSize: 10, color: "var(--dm)", marginTop: 3, fontFamily: "var(--fm)" }}>{r.d} · {r.sz}</div></div>
-            <div style={{ fontSize: 10, padding: "3px 7px", background: "rgba(34,211,238,.07)", border: "1px solid rgba(34,211,238,.18)", borderRadius: 3, color: "var(--dc)", fontFamily: "var(--fm)" }}>{r.type}</div>
-            <button style={{ padding: "6px 12px", background: "transparent", border: "1px solid var(--dbo2)", borderRadius: 4, color: "var(--dc)", fontSize: 11, cursor: "pointer", fontFamily: "var(--fm)" }}>Download</button>
+            <div style={{ flex: 1 }}><div style={{ fontSize: 13, fontWeight: 500, color: "var(--lt)", fontFamily: "var(--fm)" }}>{r.t}</div><div style={{ fontSize: 10, color: "var(--lm)", marginTop: 3, fontFamily: "var(--fm)" }}>{r.d} · {r.sz}</div></div>
+            <div style={{ fontSize: 10, padding: "3px 7px", background: "rgba(34,211,238,.07)", border: "1px solid rgba(34,211,238,.18)", borderRadius: 3, color: "var(--C)", fontFamily: "var(--fm)" }}>{r.type}</div>
+            <button style={{ padding: "6px 12px", background: "transparent", border: "1px solid var(--lbo2)", borderRadius: 4, color: "var(--C)", fontSize: 11, cursor: "pointer", fontFamily: "var(--fm)" }}>Download</button>
           </div>
         ))}
       </div>
@@ -1757,8 +1757,8 @@ function SetsV({ user, pkg }) {
             <div className="ph"><div className="pt">{sec.icon} {sec.title}</div></div>
             <div className="pb">
               {sec.fields.map(([k, v]) => (
-                <div key={k} style={{ display: "flex", justifyContent: "space-between", padding: "8px 0", borderBottom: "1px solid var(--dbo)", fontSize: 12, fontFamily: "var(--fm)" }}>
-                  <span style={{ color: "var(--dm)" }}>{k}</span><span style={{ color: "var(--dt)" }}>{v}</span>
+                <div key={k} style={{ display: "flex", justifyContent: "space-between", padding: "8px 0", borderBottom: "1px solid var(--lbo)", fontSize: 12, fontFamily: "var(--fm)" }}>
+                  <span style={{ color: "var(--lm)" }}>{k}</span><span style={{ color: "var(--lt)" }}>{v}</span>
                 </div>
               ))}
             </div>
@@ -1770,23 +1770,23 @@ function SetsV({ user, pkg }) {
       <div className="pn">
         <div className="ph">
           <div className="pt">⚙ OAuth & Email Configuration</div>
-          <button onClick={() => setCfgOpen(!cfgOpen)} style={{ padding: "5px 12px", background: "transparent", border: "1px solid var(--dbo2)", borderRadius: 4, color: "var(--dc)", fontSize: 11, cursor: "pointer", fontFamily: "var(--fm)" }}>
+          <button onClick={() => setCfgOpen(!cfgOpen)} style={{ padding: "5px 12px", background: "transparent", border: "1px solid var(--lbo2)", borderRadius: 4, color: "var(--C)", fontSize: 11, cursor: "pointer", fontFamily: "var(--fm)" }}>
             {cfgOpen ? "Hide" : "Configure"}
           </button>
         </div>
         {cfgOpen && (
           <div className="pb">
-            <div style={{ fontSize: 12, color: "var(--dm)", fontFamily: "var(--fm)", marginBottom: 16, lineHeight: 1.7, padding: "10px 12px", background: "rgba(34,211,238,.05)", borderRadius: 8, border: "1px solid var(--dbo2)" }}>
-              📋 <strong style={{ color: "var(--dt)" }}>Setup Guide:</strong><br />
-              1. Go to <span style={{ color: "var(--dc)" }}>console.cloud.google.com</span> → Create project → Enable "Google Identity API" → Create OAuth 2.0 Client ID → paste below<br />
-              2. Go to <span style={{ color: "var(--dc)" }}>emailjs.com</span> → Free account → Connect Gmail/Outlook → Create template with variables: to_email, to_name, package_name, package_tier, package_price, support_email, support_phone
+            <div style={{ fontSize: 12, color: "var(--lm)", fontFamily: "var(--fm)", marginBottom: 16, lineHeight: 1.7, padding: "10px 12px", background: "rgba(34,211,238,.05)", borderRadius: 8, border: "1px solid var(--lbo2)" }}>
+              📋 <strong style={{ color: "var(--lt)" }}>Setup Guide:</strong><br />
+              1. Go to <span style={{ color: "var(--C)" }}>console.cloud.google.com</span> → Create project → Enable "Google Identity API" → Create OAuth 2.0 Client ID → paste below<br />
+              2. Go to <span style={{ color: "var(--C)" }}>emailjs.com</span> → Free account → Connect Gmail/Outlook → Create template with variables: to_email, to_name, package_name, package_tier, package_price, support_email, support_phone
             </div>
             {[["Google Client ID", "GOOGLE_CLIENT_ID", "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"], ["EmailJS Service ID", "EMAILJS_SERVICE", "service_xxxxxxxx"], ["EmailJS Template ID", "EMAILJS_TEMPLATE", "template_xxxxxxxx"], ["EmailJS Public Key", "EMAILJS_KEY", "public key from emailjs dashboard"]].map(([label, key, ph]) => (
               <div key={key} style={{ marginBottom: 12 }}>
-                <label style={{ fontSize: 10, letterSpacing: 1.5, color: "var(--dm)", textTransform: "uppercase", display: "block", marginBottom: 6, fontFamily: "var(--fm)" }}>{label}</label>
+                <label style={{ fontSize: 10, letterSpacing: 1.5, color: "var(--lm)", textTransform: "uppercase", display: "block", marginBottom: 6, fontFamily: "var(--fm)" }}>{label}</label>
                 <input value={localCfg[key]} onChange={e => setLocalCfg(p => ({ ...p, [key]: e.target.value }))}
                   placeholder={ph}
-                  style={{ width: "100%", padding: "9px 12px", background: "var(--db2)", border: "1px solid var(--dbo2)", borderRadius: 8, color: "var(--dt)", fontFamily: "var(--fm)", fontSize: 12, outline: "none" }} />
+                  style={{ width: "100%", padding: "9px 12px", background: "var(--lb2)", border: "1px solid var(--lbo2)", borderRadius: 8, color: "var(--lt)", fontFamily: "var(--fm)", fontSize: 12, outline: "none" }} />
               </div>
             ))}
             <div style={{ fontSize: 11, color: "#eab308", fontFamily: "var(--fm)", marginTop: 4, padding: "8px 12px", background: "rgba(234,179,8,.07)", borderRadius: 6, border: "1px solid rgba(234,179,8,.2)" }}>
@@ -1801,9 +1801,9 @@ function SetsV({ user, pkg }) {
         <div className="ph"><div className="pt">✉ Support & Contact</div></div>
         <div className="pb">
           {[["Email Support", B.email, "✉"], ["Phone / WhatsApp", B.phone, "📱"], ["Headquarters", "Dubai, UAE", "📍"], ["Response SLA", "< 2h business hours · 24/7 critical", "⏱"]].map(([k, v, ic]) => (
-            <div key={k} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "9px 0", borderBottom: "1px solid var(--dbo)", fontSize: 12, fontFamily: "var(--fm)" }}>
-              <span style={{ color: "var(--dm)", display: "flex", alignItems: "center", gap: 7 }}><span>{ic}</span>{k}</span>
-              <span style={{ color: "var(--dc)" }}>{v}</span>
+            <div key={k} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "9px 0", borderBottom: "1px solid var(--lbo)", fontSize: 12, fontFamily: "var(--fm)" }}>
+              <span style={{ color: "var(--lm)", display: "flex", alignItems: "center", gap: 7 }}><span>{ic}</span>{k}</span>
+              <span style={{ color: "var(--C)" }}>{v}</span>
             </div>
           ))}
         </div>
